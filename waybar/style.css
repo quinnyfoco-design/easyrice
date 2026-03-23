@@ -1,0 +1,43 @@
+* {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 0 12px;
+}
+
+#custom-exit,
+#custom-reboot,
+#custom-poweroff,
+#clock,
+#cpu,
+#memory,
+#custom-gpu {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 4px 8px;
+    transition: color 0.15s ease;
+}
+
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#custom-gpu:hover {
+    color: #ffffff;
+}
+
+#custom-exit:hover   { color: #e5c07b; }
+#custom-reboot:hover  { color: #61afef; }
+#custom-poweroff:hover { color: #e06c75; }

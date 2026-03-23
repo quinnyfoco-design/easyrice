@@ -1,0 +1,61 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "fixed-center": true,
+    "spacing": 8,
+    "margin-top": 8,
+    "margin-left": 12,
+    "margin-right": 12,
+
+    "modules-left": ["group/power"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "custom/gpu"],
+
+    "group/power": {
+        "orientation": "horizontal",
+        "modules": ["custom/exit", "custom/reboot", "custom/poweroff"]
+    },
+
+    "custom/exit": {
+        "format": "⎋",
+        "on-click": "hyprctl dispatch exit",
+        "tooltip-format": "Exit Hyprland"
+    },
+
+    "custom/reboot": {
+        "format": "↺",
+        "on-click": "systemctl reboot",
+        "tooltip-format": "Reboot"
+    },
+
+    "custom/poweroff": {
+        "format": "⏻",
+        "on-click": "systemctl poweroff",
+        "tooltip-format": "Poweroff"
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%A, %d %B %Y}",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 2,
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "RAM {used:0.1f}G",
+        "interval": 2,
+        "tooltip": false
+    },
+
+    "custom/gpu": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print \"GPU \"$1\"%\"}'",
+        "interval": 2,
+        "tooltip": false
+    }
+}

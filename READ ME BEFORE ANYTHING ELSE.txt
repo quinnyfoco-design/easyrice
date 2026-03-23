@@ -1,0 +1,7 @@
+Hi! This will copy configs and such things. Run the 'run-this.sh' file BUT by doing
+this(or else it wont work.):
+chmod +x ./run-this.sh
+
+basically, chmod gives it permission to run. then just run it by doing './run-this.sh'
+in your terminal.
+BUT!!! the binds are in binds.txt so yk how to navigate. Dm me if you wanna change or add anything :).

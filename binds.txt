@@ -1,0 +1,18 @@
+The binds are pretty much simple. You see that windows key on ur keyboard?
+Thats called mod/super key on linux. The basics are(i set these, dm me if you
+want something diffrent.):
+- MOD + S : this opens kitty(e.g. the terminal)
+- MOD + Q : this closes the current window
+- MOD + Y : this opens firefox
+- MOD + Space : Launches Rofi, the app launcher.
+- MOD + R : this is really rare in your use case. It reloads hyprland
+- MOD + G : this runs steam
+- MOD + V : this runs VSCodium a code editor, if its installed
+- MOD + M : logout of hyprland
+- MOD + N : minimizes currently focused window
+- MOD + B : brings back the minimized window
+- MOD + E : opens dolphin
+- MOD + left mouse button : Enables moving windows while held
+- MOD + right mouse button : Enables resizing window while held
+- any volume button : Should work tho sadly i havent figured out how to make
+it show an pop up.
